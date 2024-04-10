@@ -1,0 +1,30 @@
+.carousel-item {
+    background: #C8B5EA;
+    height: 540px;
+}
+
+/*.carousel-item > .row {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
+.icon_circle {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.image-text-overlay {
+    background-image: url("./../images/icons/icon_bubble.png");
+    height: 242px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-text-overlay p {
+    top: -20px;
+}
