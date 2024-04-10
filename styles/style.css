@@ -28,3 +28,17 @@
 .image-text-overlay p {
     top: -20px;
 }
+
+button[data-bs-target="#carouselExampleControls"] {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+
+.carousel__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+}
