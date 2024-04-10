@@ -42,3 +42,17 @@ button[data-bs-target="#carouselExampleControls"] {
     gap: 200px;
     margin-top: 30px;
 }
+
+.directions-block.container {
+    background: #ECA5E3;
+}
+
+.directions-block.container .row.my-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.directions-block.container .row.my-3 .col-11.rounded-5 {
+    background: white;
+    padding: 51px 32px 52px 72px;
+}
