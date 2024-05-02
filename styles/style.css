@@ -216,6 +216,7 @@ button[data-bs-target="#carouselExampleControls"] {
 
 .directions-block.container {
     background: #ECA5E3;
+    box-shadow: 0px 0px 50px 0px #00000040;
 }
 
 .directions-block.container .row.my-3 {
