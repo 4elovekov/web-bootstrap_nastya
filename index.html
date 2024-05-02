@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Track</title>
-    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="js/index.js" defer></script>
+    <!-- <link href="/styles/mybootstrap.min.css" rel="stylesheet"> -->
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- /CSS bootstrap -->
+
+    <!-- JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous" defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/js//mypopper.min.js" defer></script>
+    <script src="/js//mybootstrap.min.js" defer></script> -->
+    <script src="js/index.js" defer></script>
+    <!-- /JS bootstrap -->
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- /Шрифты -->
+
     <!-- макет: https://www.figma.com/file/qXm5jbf1KiwL5JNWtkEAFb/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF?type=design&node-id=0%3A1&mode=design&t=E0LBUyDoQPCgbUMj-1 -->
 </head>
 <body>
@@ -20,7 +35,7 @@
             <div class="container">
                 <!-- Логотип и название сайта слева -->
                 <a class="navbar-brand" href="#">
-                    <img src="./images/main_logo.png" alt="Логотип сайта" height="30" class="d-inline-block align-top">
+                    <img src="./images/logo_main.png" alt="Логотип сайта" height="30" class="d-inline-block align-top w-25 h-25">
                     TRACK
                 </a>
 
@@ -45,9 +60,6 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Полоса на всю ширину экрана внизу шапки -->
-        <hr style="width: 100%; height: 1px; background-color: black; margin: 0;">
     </header>
     
 
@@ -55,24 +67,26 @@
 
     <main class="container mt-4">
         <!-- Строка поиска -->
-        <div class="input-group mb-3">
-            <span class="input-group-text"><i class="bi bi-search"></i></span>
-            <input type="text" class="form-control" placeholder="Поиск">
-            <button class="btn btn-primary" type="button">Найти</button>
+        <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="Поиск" style="background: #8E6DD780">
+            <button class="btn btn-primary" type="button" style="border-radius: 60px;">найти</button>
         </div>
 
         <!-- Слайдер -->
-        <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active container p-0 rounded-5">
+        <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-interval="false">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item carousel-item--1 active container p-4 rounded-5">
                     <div class="row">
-                        <div class="col-6"></div>
-                        <div class="col-6">
+                        <div class="col-7">
+                            <h1>TRACK — с IT на «ты»</h1>
+                            <p>Онлайн-школа про знания и креатив</p>
+                        </div>
+                        <div class="col-5">
                             <img src="./images/slider/slide_1.png" class="d-block w-100" alt="Slide 1">
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item container p-0 rounded-5">
+                <div class="carousel-item carousel-item--2 container p-4 rounded-5">
                     <div class="row">
                         <div class="col-6">
                             <img src="./images/slider/slide_2.png" class="d-block w-100 z-1 position-relative" alt="Slide 2">
@@ -81,19 +95,19 @@
                         <div class="col-6">
                             <div class="row">
                                 <div class="col">
-                                    <p>Это пример текста на первой строке.</p>
+                                    <p style="width: 90%;">Арина</p>
                                 </div>
                             </div>
                             <!-- Строчка с картинкой и текстом поверх неё -->
                             <div class="row">
                                 <div class="col image-container">
-                                    <div class="image-text-overlay"><p>Текст поверх картинки</p></div>
+                                    <div class="image-text-overlay"><p>Вы помогли мне найти работу!</p></div>
                                 </div>
                             </div>
                             <!-- Строчка с текстом и иконкой справа от текста -->
                             <div class="row">
                                 <div class="col d-flex align-items-center">
-                                    <p class="mb-0">Это пример текста на третьей строке.</p>
+                                    <p class="mb-0">Оценка: 5</p>
                                     <!-- Используем иконку из FontAwesome как пример -->
                                     <img src="./images/icons/icon_star.png" alt="Картинка" class="block-img">
                                 </div>
@@ -101,28 +115,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item container p-0 rounded-5">
+                <div class="carousel-item carousel-item--3 container p-4 rounded-5">
                     <div class="row">
                         <div class="col-6">
-                            <img src="./images/slider/slide_3.png" class="d-block w-100 z-1 position-relative" alt="Slide 3" style="margin-top: 22px">
+                            <img src="./images/slider/slide_3.png" class="d-block w-100 z-1 position-relative" alt="Slide 3" style="margin-top: 74px">
                             <img src="./images/icons/icon_circle.png" class="icon_circle" alt="icon_circle">
                         </div>
                         <div class="col-6">
                             <div class="row">
                                 <div class="col">
-                                    <p>Это пример текста на первой строке.</p>
+                                    <p>Слава</p>
                                 </div>
                             </div>
                             <!-- Строчка с картинкой и текстом поверх неё -->
                             <div class="row">
                                 <div class="col image-container">
-                                    <div class="image-text-overlay"><p>Текст поверх картинки</p></div>
+                                    <div class="image-text-overlay"><p>Я очень рад, что прошел курс бизнес-аналитика!</p></div>
                                 </div>
                             </div>
                             <!-- Строчка с текстом и иконкой справа от текста -->
                             <div class="row">
                                 <div class="col d-flex align-items-center">
-                                    <p class="mb-0">Это пример текста на третьей строке.</p>
+                                    <p class="mb-0">Оценка: 5</p>
                                     <!-- Используем иконку из FontAwesome как пример -->
                                     <img src="./images/icons/icon_star.png" alt="Картинка" class="block-img">
                                 </div>
@@ -130,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item container p-0 rounded-5">
+                <div class="carousel-item carousel-item--4 container p-4 rounded-5">
                     <div class="row">
                         <div class="col-6">
                             <img src="./images/slider/slide_4.png" class="d-block w-100 z-1 position-relative" alt="Slide 4">
@@ -139,19 +153,19 @@
                         <div class="col-6">
                             <div class="row">
                                 <div class="col">
-                                    <p>Это пример текста на первой строке.</p>
+                                    <p>Петр</p>
                                 </div>
                             </div>
                             <!-- Строчка с картинкой и текстом поверх неё -->
                             <div class="row">
                                 <div class="col image-container">
-                                    <div class="image-text-overlay"><p>Текст поверх картинки</p></div>
+                                    <div class="image-text-overlay"><p>Вау, у меня появилась жена, потому что я стал богат!</p></div>
                                 </div>
                             </div>
                             <!-- Строчка с текстом и иконкой справа от текста -->
                             <div class="row">
                                 <div class="col d-flex align-items-center">
-                                    <p class="mb-0">Это пример текста на третьей строке.</p>
+                                    <p class="mb-0">Оценка: 5</p>
                                     <!-- Используем иконку из FontAwesome как пример -->
                                     <img src="./images/icons/icon_star.png" alt="Картинка" class="block-img">
                                 </div>
@@ -161,7 +175,7 @@
                 </div>
                 <!-- Добавьте дополнительные слайды здесь -->
             </div>
-            <div class="carousel__nav">
+            <div class="carousel__nav mt-4">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <img src="images/icons/icon_nav_left.png" alt="icon_nav_left">
                     <span class="visually-hidden">Previous</span>
@@ -174,24 +188,24 @@
         </div>
 
         <div class="directions-block container rounded-5">
-            Направления обучения
+            <h2>Направления обучения</h2>
             <div class="row my-3">
                 <div class="col-11 rounded-5">
                     <div class="row">
                         <div class="col-5">
                             <!-- Заголовок блока -->
-                            <h3 class="block-text mb-3">Направление 1</h3>
+                            <h3 class="block-text mb-3">Кодирование</h3>
                             <!-- Текст блока -->
                             <ul class="list-unstyled">
-                                <li class="mb-1">Первый пункт</li>
-                                <li class="mb-1">Второй пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
+                                <li class="mb-1">Backend-разработчик</li>
+                                <li class="mb-1">Frontend-разработчик</li>
+                                <li class="mb-1">Мобильный разработчик</li>
+                                <li class="mb-1">QA инженер</li>
+                                <li class="mb-1">Fullstak-специалист</li>
                             </ul>
                             <!-- Ссылка с картинкой -->
                             <a href="#" class="block-text">
-                                Ссылка на направление
+                                Узнать подробнее
                                 <img src="./images/icons/icon_arrow.png" alt="Картинка" class="block-img">
                             </a>
                         </div>
@@ -206,18 +220,18 @@
                     <div class="row">
                         <div class="col-5">
                             <!-- Заголовок блока -->
-                            <h3 class="block-text mb-3">Направление 1</h3>
+                            <h3 class="block-text mb-3">Дизайн</h3>
                             <!-- Текст блока -->
                             <ul class="list-unstyled">
-                                <li class="mb-1">Первый пункт</li>
-                                <li class="mb-1">Второй пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
+                                <li class="mb-1">Графический дизайн</li>
+                                <li class="mb-1">Веб-дизайнер</li>
+                                <li class="mb-1">UI/UX-дизайнер</li>
+                                <li class="mb-1">3D дизайнер</li>
+                                <li class="mb-1">Аниматор</li>
                             </ul>
                             <!-- Ссылка с картинкой -->
                             <a href="#" class="block-text">
-                                Ссылка на направление
+                                Узнать подробнее
                                 <img src="./images/icons/icon_arrow.png" alt="Картинка" class="block-img">
                             </a>
                         </div>
@@ -232,18 +246,18 @@
                     <div class="row">
                         <div class="col-5">
                             <!-- Заголовок блока -->
-                            <h3 class="block-text mb-3">Направление 1</h3>
+                            <h3 class="block-text mb-3">Аналитика</h3>
                             <!-- Текст блока -->
                             <ul class="list-unstyled">
-                                <li class="mb-1">Первый пункт</li>
-                                <li class="mb-1">Второй пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
-                                <li class="mb-1">Третий пункт</li>
+                                <li class="mb-1">Data-sceintist</li>
+                                <li class="mb-1">Системный аналитик</li>
+                                <li class="mb-1">Аналитик данных</li>
+                                <li class="mb-1">1C-аналитик</li>
+                                <li class="mb-1">HR-менеджер</li>
                             </ul>
                             <!-- Ссылка с картинкой -->
                             <a href="#" class="block-text">
-                                Ссылка на направление
+                                Узнать подробнее
                                 <img src="./images/icons/icon_arrow.png" alt="Картинка" class="block-img">
                             </a>
                         </div>
