@@ -85,18 +85,32 @@ h4 {
 .input-group {
     height: 60px;
     gap: 24px;
+}
 
-    > .btn {
-        padding: 8px 58px 8px 58px;
-        border: 1px solid #44036F;
-        border-radius: 60px !important;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 43.36px;
-        text-align: left;
-        background-color: #FFFFFF;
-        color: #44036F;
-    }
+.btn-primary {
+    padding: 8px 58px 8px 58px;
+    border: 1px solid #44036F;
+    border-radius: 60px !important;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 43.36px;
+    text-align: left;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    color: #44036F;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3 ease !important;
+}
+
+.btn-primary:hover {
+    background-color: #F5D7F1 !important;
+    border-color: #44036F !important;
+    color: #44036F;
+}
+
+.btn-primary:active {
+    background-color: #730065 !important;
+    border-color: #44036F !important;
+    color: #FFFFFF !important;
 }
 
 .form-control {
@@ -251,6 +265,10 @@ button[data-bs-target="#carouselExampleControls"] {
             position: relative;
             top: -5px;
         }
+    }
+
+    img:only-child {
+        width: 140%;
     }
 }
 
