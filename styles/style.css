@@ -13,6 +13,10 @@ input:focus {
     outline: none !important;
 }
 
+body {
+    font-size: 1.1rem;
+}
+
 body, p, li, ul, a, input {
     font-family: 'Kantumruy', sans-serif;
 }
@@ -23,21 +27,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 96px;
-    line-height: 139px;
+    font-size: 6rem;
+    line-height: 8.5rem;
     text-align: left;
 }
 
 h2 {
-    font-size: 64px;
-    line-height: 92.67px;
+    font-size: 4rem;
+    line-height: 5.5rem;
     color: #44036F;
     text-align: left;
 }
 
 h3 {
-    font-size: 48px;
-    line-height: 69.5px;
+    font-size: 3rem;
+    line-height: 4rem;
     color: #44036F;
     text-align: left;
 }
@@ -45,8 +49,8 @@ h3 {
 h4 {
     font-family: 'Kantumruy', sans-serif;
     font-weight: 700;
-    font-size: 32.96px;
-    line-height: 59.55px;
+    font-size: 2rem;
+    line-height: 3.5rem;
     color: #FFFFFF;
 }
 
@@ -58,13 +62,17 @@ h4 {
 
 .navbar-brand {
     font-family: "Open Sans", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 54.47px;
+    line-height: 3.3rem;
     text-align: left;
     display: flex;
     align-items: center;
     gap: 14px;
+
+    img {
+        height: 4rem;
+    }
 }
 
 .navbar-nav {
@@ -75,15 +83,15 @@ h4 {
 }
 
 .nav-link {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 57.81px;
+    line-height: 3.5rem;
     text-align: left;
     color: #44036F;
 }
 
 .input-group {
-    height: 60px;
+    height: 3.75rem;
     gap: 24px;
 }
 
@@ -91,9 +99,9 @@ h4 {
     padding: 8px 58px 8px 58px;
     border: 1px solid #44036F;
     border-radius: 60px !important;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 43.36px;
+    line-height: 2.6rem;
     text-align: left;
     background-color: #FFFFFF;
     background: #FFFFFF;
@@ -125,7 +133,7 @@ h4 {
 
 .carousel-item {
     background: #C8B5EA;
-    height: 540px;
+    height: 33rem;
     color: #44036F;
 
     > .row {
@@ -137,25 +145,26 @@ h4 {
     }
 
     .col > p {
-        font-size: 64px;
+        font-size: 4rem;
         font-weight: 700;
-        line-height: 115.63px;
+        line-height: 7rem;
         text-align: left;
     }
 
     .col > p.mb-0 {
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 700;
-        line-height: 86.72px;
+        line-height: 5.3rem;
         text-align: left;
     }
 
     .image-text-overlay > p {
-        font-size: 40px;
+        font-size: 2rem;
         font-weight: 400;
-        line-height: 72.27px;
+        line-height: 4.5rem;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 3rem;
+        width: 95%;
     }
 }
 
@@ -174,36 +183,30 @@ h4 {
     }
 
     p {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 400;
-        line-height: 57.81px;
+        line-height: 3.5rem;
         text-align: left;
     }
 }
 
 .carousel-item--3 > .row > .col-6 > img:first-child {
-    margin-top: 74px;
+    margin-top: 4.6rem;
 }
 
 .block-img {
     margin-left: 5px;
 }
 
-/*.carousel-item > .row {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}*/
-
 .icon_circle {
     position: absolute;
-    top: 20px;
-    left: 180px;
+    top: 1.25rem;
+    left: 11.25rem;
 }
 
 .image-text-overlay {
     background-image: url("./../images/icons/icon_bubble.png");
-    height: 242px;
+    height: 14rem;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -212,7 +215,7 @@ h4 {
 }
 
 .image-text-overlay p {
-    top: -20px;
+    top: -1.25rem;
 }
 
 button[data-bs-target="#carouselExampleControls"] {
@@ -226,7 +229,7 @@ button[data-bs-target="#carouselExampleControls"] {
     align-items: center;
     justify-content: center;
     gap: 200px;
-    margin-top: 30px;
+    margin-top: 1.8rem;
 }
 
 .carousel-control-next, 
@@ -246,12 +249,12 @@ button[data-bs-target="#carouselExampleControls"] {
 
 .directions-block.container .row.my-3 .col-11.rounded-5 {
     background: white;
-    padding: 51px 32px 52px 72px;
+    padding: 3.25rem 2rem 3.25rem 4.5rem;
 
     a {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
-        line-height: 43.36px;
+        line-height: 2.6rem;
         text-align: left;
         color: #44036FB2;
         text-decoration: none;
@@ -273,9 +276,9 @@ button[data-bs-target="#carouselExampleControls"] {
 }
 
 .list-unstyled {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 43.36px;
+    line-height: 2.6rem;
     text-align: left;
     color: #472B83;
 }
@@ -302,4 +305,128 @@ footer {
 
 .footer-block--right {
     text-align: right;
+}
+
+@media (max-width: 1400px) {
+    .image-text-overlay {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4.6rem !important;
+        line-height: 7.5rem !important;
+    }
+
+    h2 {
+        font-size: 3.6rem !important;
+    }
+
+    h3 {
+        font-size: 2.4rem !important;
+    }
+
+    .icon_circle {
+        left: 9rem;
+    }
+
+    .carousel-item {
+        height: 30rem;
+    }
+
+    .image-text-overlay {
+        height: 11rem;
+
+        p {
+            line-height: 3.5rem !important;
+            margin-bottom: 2rem !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 4.2rem !important;
+        line-height: 6.5rem !important;
+    }
+
+    h3 {
+        font-size: 2.2rem !important;
+    }
+
+    .carousel-item {
+        height: 26rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
+
+    body {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+
+    h2 {
+        font-size: 2.8rem !important;
+    }
+    
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 9rem;
+        gap: 1rem;
+
+        .form-control {
+            width: 100%;
+        }
+    }
+
+    .image-text-overlay {
+        height: 9rem;
+
+        p {
+            font-size: 1.7rem !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    button[data-bs-target="#carouselExampleControls"] img{
+        height: 4rem;
+    }
+
+    .directions-block.container .row.my-3 .col-11.rounded-5 {
+        padding: 2rem;
+
+        a img {
+            top: 0px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .image-text-overlay {
+        height: 10rem;
+    }
 }
