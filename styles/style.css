@@ -13,7 +13,7 @@ input:focus {
     outline: none !important;
 }
 
-body, p, li, ul, a {
+body, p, li, ul, a, input {
     font-family: 'Kantumruy', sans-serif;
 }
 

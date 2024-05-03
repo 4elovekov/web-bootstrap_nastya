@@ -1,11 +1,14 @@
+// Добавление слушателя события загрузки страницы на элемент документ
 document.addEventListener("DOMContentLoaded", function() {
     const carouselElement = document.querySelector('#carouselExampleControls');
 
     // Явная инициализация карусели
     const carouselInstance = new bootstrap.Carousel(carouselElement, {
-        interval: false, // Пример настройки, вы можете настроить карусель как вам нужно
+        interval: false, // Убираем автоматическую прокрутку слайдов
     });
 
+
+    // Свайп на мобильных устройствах
     let startX;
     const sensitivity = 5; // Минимальное расстояние для свайпа.
 
