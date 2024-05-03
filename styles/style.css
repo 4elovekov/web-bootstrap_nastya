@@ -1,3 +1,4 @@
+/* Сброс стилей */
 * {
     margin: 0;
     padding: 0;
@@ -9,23 +10,32 @@
     color: inherit;
 }
 
+/* Стили для инпут */
 input:focus {
     outline: none !important;
 }
 
+html {
+    font-size: 16px;
+}
+
+/* Размер шрифта для бади */
 body {
     font-size: 1.1rem;
 }
 
+/* Шрифт */
 body, p, li, ul, a, input {
     font-family: 'Kantumruy', sans-serif;
 }
 
+/* Шрифт и вес шрифта */
 h1, h2, h3, h4 {
     font-family: 'Dela Gothic One', sans-serif;
     font-weight: 400;
 }
 
+/* Стили для заголовков */
 h1 {
     font-size: 6rem;
     line-height: 8.5rem;
@@ -54,6 +64,7 @@ h4 {
     color: #FFFFFF;
 }
 
+/* Стили для header (navbar) навигации */
 .navbar {
     border-bottom: 1px solid #44036F;
     display: flex;
@@ -90,6 +101,7 @@ h4 {
     color: #44036F;
 }
 
+/* Стили для строки поиска */
 .input-group {
     height: 3.75rem;
     gap: 24px;
@@ -109,12 +121,14 @@ h4 {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3 ease !important;
 }
 
+/* Стили для кнопки при наведении */
 .btn-primary:hover {
     background-color: #F5D7F1 !important;
     border-color: #44036F !important;
     color: #44036F;
 }
 
+/* Стили для кнопки при нажатии */
 .btn-primary:active {
     background-color: #730065 !important;
     border-color: #44036F !important;
@@ -127,6 +141,7 @@ h4 {
     background: #8E6DD780
 }
 
+/* Стили для слайдера и его элементов */
 .carousel-inner {
     box-shadow: 0px 0px 50px 0px #00000040;
 }
@@ -168,6 +183,7 @@ h4 {
     }
 }
 
+/* Стили для активного слайда */
 .carousel-item.active {
     display: flex;
     align-items: flex-end;
@@ -204,6 +220,7 @@ h4 {
     left: 11.25rem;
 }
 
+/* Стили для картинки с отзывом */
 .image-text-overlay {
     background-image: url("./../images/icons/icon_bubble.png");
     height: 14rem;
@@ -218,6 +235,7 @@ h4 {
     top: -1.25rem;
 }
 
+/* Стили для кнопок навигации слайдера */
 button[data-bs-target="#carouselExampleControls"] {
     height: fit-content;
     width: fit-content;
@@ -237,6 +255,7 @@ button[data-bs-target="#carouselExampleControls"] {
     opacity: 1;
 }
 
+/* Стили для блока с направлениями обучения */
 .directions-block.container {
     background: #ECA5E3;
     box-shadow: 0px 0px 50px 0px #00000040;
@@ -283,6 +302,7 @@ button[data-bs-target="#carouselExampleControls"] {
     color: #472B83;
 }
 
+/* Стили для подвала сайта */
 footer {
     background: #5C2680;
     color: #FFFFFF;
@@ -307,12 +327,14 @@ footer {
     text-align: right;
 }
 
+/* Стили для резрешений менее 1400 пикселей */
 @media (max-width: 1400px) {
     .image-text-overlay {
         height: 12rem;
     }
 }
 
+/* Стили для резрешений менее 1200 пикселей */
 @media (max-width: 1200px) {
     html {
         font-size: 14px;
@@ -349,6 +371,7 @@ footer {
     }
 }
 
+/* Стили для резрешений менее 992 пикселей */
 @media (max-width: 992px) {
     html {
         font-size: 13px;
@@ -368,6 +391,7 @@ footer {
     }
 }
 
+/* Стили для резрешений менее 768 пикселей */
 @media (max-width: 768px) {
     html {
         font-size: 11px;
@@ -421,6 +445,7 @@ footer {
     }
 }
 
+/* Стили для резрешений менее 576 пикселей */
 @media (max-width: 768px) {
     html {
         font-size: 10px;
