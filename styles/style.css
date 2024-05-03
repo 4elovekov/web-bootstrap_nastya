@@ -235,6 +235,11 @@ h4 {
     top: -1.25rem;
 }
 
+/* Стили для иконки звёздочки */
+.star-img {
+    height: 5rem;
+}
+
 /* Стили для кнопок навигации слайдера */
 button[data-bs-target="#carouselExampleControls"] {
     height: fit-content;
@@ -450,7 +455,7 @@ footer {
 }
 
 /* Стили для резрешений менее 576 пикселей */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     html {
         font-size: 10px;
     }
